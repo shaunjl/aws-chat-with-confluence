@@ -4,11 +4,13 @@
 Use Embedded Vector Store and an LLM to chat with your confluence docs, all using only AWS
 
 # Details
-The overall structure will be inspired by [peterw/Chat-With-Github-Repo](https://github.com/peterw/Chat-with-Github-Repo)
+The overall structure will be inspired by
+- [peterw/Chat-With-Github-Repo](https://github.com/peterw/Chat-with-Github-Repo) (has MIT license)
+- [devsentient/.../confluence_app](https://github.com/devsentient/examples/blob/main/LLMs/confluence_app/readme.md) (no license)
 
 1. Create an embedding vector store of the Confluence docs
   - use [langchain.document_loaders.ConfluenceLoader](https://github.com/langchain-ai/langchain/blob/13b4f465e2e67451549dc0662495ae07b3530659/libs/langchain/langchain/document_loaders/confluence.py#L35) to load the Confluence docs
-  - use [langchain.text_splitter.TokenTextSplitter](https://github.com/langchain-ai/langchain/blob/c2d1d903fa35b91018b4d777db2b008fcbaa9fbc/langchain/text_splitter.py#L177) to break up the docs into `documents` for processing
+  - use [langchain.text_splitter.CharacterTextSplitter](https://github.com/langchain-ai/langchain/blob/c2d1d903fa35b91018b4d777db2b008fcbaa9fbc/langchain/text_splitter.py#L159) and [langchain.text_splitter.TokenTextSplitter](https://github.com/langchain-ai/langchain/blob/c2d1d903fa35b91018b4d777db2b008fcbaa9fbc/langchain/text_splitter.py#L177) to break up the docs into `documents` for processing
   - will try to use [langchain.embedddings.BedrockEmbeddings](https://github.com/langchain-ai/langchain/blob/13b4f465e2e67451549dc0662495ae07b3530659/libs/langchain/langchain/embeddings/bedrock.py#L10)
   - will try to use AWS OpenSearch (which is basically ElasticSearch) via [langchain.vectorstores.OpenSearchVectorSearch](https://github.com/langchain-ai/langchain/blob/13b4f465e2e67451549dc0662495ae07b3530659/libs/langchain/langchain/vectorstores/opensearch_vector_search.py#L319), following these resources:
     - langchain's [docs on how to use it with Amazon OpenSearch Service Serverles](https://python.langchain.com/docs/integrations/vectorstores/opensearch#using-aoss-amazon-opensearch-service-serverless)
