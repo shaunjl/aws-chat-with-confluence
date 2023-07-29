@@ -1,8 +1,7 @@
 # 🛠️ this is still a work in progress 🛠️
 
 # Overview
-Use Embedded Vector Store and an LLM to chat with your confluence docs
-Goal is to do everything in aws. If it doesn't work, I'll rename it
+Use Embedded Vector Store and an LLM to chat with your confluence docs, all using only AWS
 
 # Details
 The overall structure will be inspired by [peterw/Chat-With-Github-Repo](https://github.com/peterw/Chat-with-Github-Repo)
