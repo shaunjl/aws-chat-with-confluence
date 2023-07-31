@@ -1,4 +1,4 @@
-# 🛠️ this is still a work in progress 🛠️
+# 🛠️ this is still a work in progress - some of the details are hard to get down until I get access to Bedrock 🛠️
 
 # Overview
 Use Embedded Vector Store and an LLM to chat with your confluence docs, all using only AWS
