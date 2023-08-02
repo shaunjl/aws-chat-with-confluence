@@ -1,12 +1,12 @@
-# 🛠️ this is still a work in progress - some of the details are hard to get down until I get access to Bedrock 🛠️
+# 🛠️ WIP 🛠️
+This is currently a Work in Progress, it is basically an implementation plan.
+
+To see a working version that uses OpenAI and open source, see [chat-with-confluence](https://github.com/shaunjl/chat-with-confluence)
 
 # Overview
 Use Embedded Vector Store and an LLM to chat with your confluence docs, all using only AWS
 
 # Details
-The overall structure will be inspired by
-- [peterw/Chat-With-Github-Repo](https://github.com/peterw/Chat-with-Github-Repo) (has MIT license)
-- [devsentient/.../confluence_app](https://github.com/devsentient/examples/blob/main/LLMs/confluence_app/readme.md) (no license)
 
 ## Approach
 1. Create an embedding vector store of the Confluence docs

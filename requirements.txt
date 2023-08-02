@@ -1,9 +1,0 @@
-pathspec
-langchain
-atlassian-python-api
-beautifulsoup4
-lxml
-boto3
-python-dotenv
-streamlit
-streamlit_chat
